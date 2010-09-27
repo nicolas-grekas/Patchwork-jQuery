@@ -4,7 +4,7 @@ class extends self
 {
 	function __construct($template, $binaryMode)
 	{
-		if (0 === strpos($template, 'js/jquery'))
+		if (0 === strpos($template, 'jquery/'))
 		{
 			$this->Xlvar = '\{\[';
 			$this->Xrvar = '\]\}';

@@ -1,0 +1,62 @@
+/***
+
+SET $_base
+	IF $_base ***/{[$_base|replace:'/*$':'']}/***
+	ELSE ***/jquery/themes/{[$jquery_ui_theme]}/***
+	END:IF
+END:SET
+
+SET $_css_content
+
+	IF $ui_core
+		AGENT "{[$_base]}/jquery.ui.core.css"
+	END:IF
+
+	IF $ui_accordion
+		AGENT "{[$_base]}/jquery.ui.accordion.css"
+	END:IF
+
+	IF $ui_autocomplete
+		AGENT "{[$_base]}/jquery.ui.autocomplete.css"
+	END:IF
+
+	IF $ui_button
+		AGENT "{[$_base]}/jquery.ui.button.css"
+	END:IF
+
+	IF $ui_datepicker
+		AGENT "{[$_base]}/jquery.ui.datepicker.css"
+	END:IF
+
+	IF $ui_dialog
+		AGENT "{[$_base]}/jquery.ui.dialog.css"
+	END:IF
+
+	IF $ui_progressbar
+		AGENT "{[$_base]}/jquery.ui.progressbar.css"
+	END:IF
+
+	IF $ui_resizable
+		AGENT "{[$_base]}/jquery.ui.resizable.css"
+	END:IF
+
+	IF $ui_selectable
+		AGENT "{[$_base]}/jquery.ui.selectable.css"
+	END:IF
+
+	IF $ui_slider
+		AGENT "{[$_base]}/jquery.ui.slider.css"
+	END:IF
+
+	IF $ui_tabs
+		AGENT "{[$_base]}/jquery.ui.tabs.css"
+	END:IF
+
+	AGENT "{[$_base]}/jquery.ui.theme.css"
+
+END:SET
+
+SET $_base ***/url($1{[$_base|base:1]}//*** END:SET
+
+***/
+{[$_css_content|replace:'url\\((\s*["\']?)':$_base]}
