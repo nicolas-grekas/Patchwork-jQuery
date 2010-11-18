@@ -1,0 +1,7 @@
+<!--
+
+SET a$head -->{a$head}<script async defer src="{base:'jquery/jquery.js'}"></script><!-- END:SET
+
+INLINE header
+
+-->

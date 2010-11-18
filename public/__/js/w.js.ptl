@@ -1,0 +1,31 @@
+<!-- INLINE js/w.js -->
+
+window.$ = function($f)
+{
+	var u;
+
+	if (u == $f || document == $f)
+		return {ready: window.$, load: window.$};
+
+	if ('function' == typeof $f)
+		return onDOMLoaded.jQuery.push($f);
+
+	<!-- IF g$__DEBUG__ -->
+	E('jQuery still not loaded, please use $(handler) to register your jQuery code properly', 1);
+	<!-- END:IF -->
+}
+
+onDOMLoaded.jQuery = []
+onDOMLoaded.push(function()
+{
+	if (window.jQuery)
+	{
+		var i = 0, pool = onDOMLoaded.jQuery;
+		while (i < pool.length) pool[i](window.jQuery), pool[i++]=0;
+		pool.length = 0;
+	}
+	else
+	{
+		setTimeout(arguments.callee, 1);
+	}
+});
