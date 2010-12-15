@@ -15,13 +15,15 @@ window.$ = function($f)
 	<!-- END:IF -->
 }
 
-onDOMLoaded.jQuery = []
+onDOMLoaded.jQuery = [];
+onDOMLoaded.jQuery.$scrollCntrl = window.scrollCntrl;
 onDOMLoaded.push(function()
 {
 	if (window.jQuery)
 	{
 		var i = 0, pool = onDOMLoaded.jQuery;
 		while (i < pool.length) pool[i](window.jQuery), pool[i++]=0;
+		if (pool.$scrollCntrl) pool.$scrollCntrl();
 		pool.length = 0;
 	}
 	else
