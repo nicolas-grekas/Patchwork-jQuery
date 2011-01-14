@@ -12,7 +12,7 @@
  ***************************************************************************/
 
 
-class agent_jquery_jquery__x2Dui extends agentTemplate
+class agent_jquery_jquery__x2Dui__x2Ecss extends agentTemplate
 {
 	const contentType = 'text/css';
 
