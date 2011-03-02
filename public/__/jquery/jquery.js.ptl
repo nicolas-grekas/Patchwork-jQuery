@@ -4,7 +4,7 @@ INLINE jquery/jquery-1.4.4.js
 
 
 IF $ui_core
-	***/footerHtml.push('<link rel="stylesheet" type="text/css" href="{['jquery/jquery-ui.css'|base]}">');/***
+	***/$('head').append('<link rel="stylesheet" type="text/css" href="{['jquery/jquery-ui.css'|base]}">');/***
 	INLINE jquery/ui/jquery.ui.core.js
 END:IF
 
