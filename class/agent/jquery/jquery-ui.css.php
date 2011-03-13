@@ -1,6 +1,6 @@
-<?php /*********************************************************************
+<?php /***** vi: set encoding=utf-8 expandtab shiftwidth=4: ****************
  *
- *   Copyright : (C) 2010 Nicolas Grekas. All rights reserved.
+ *   Copyright : (C) 2011 Nicolas Grekas. All rights reserved.
  *   Email     : p@tchwork.org
  *   License   : http://www.gnu.org/licenses/agpl.txt GNU/AGPL
  *
@@ -14,14 +14,14 @@
 
 class agent_jquery_jquery__x2Dui__x2Ecss extends agentTemplate
 {
-	const contentType = 'text/css';
+    const contentType = 'text/css';
 
-	protected $watch = array('public/css');
+    protected $watch = array('public/css');
 
-	function compose($o)
-	{
-		$o = jquery::compose($o);
+    function compose($o)
+    {
+        $o = jquery::compose($o);
 
-		return parent::compose($o);
-	}
+        return parent::compose($o);
+    }
 }

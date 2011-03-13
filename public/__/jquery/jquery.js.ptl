@@ -4,133 +4,133 @@ INLINE jquery/jquery-1.4.4.js
 
 
 IF $ui_core
-	***/$('head').append('<link rel="stylesheet" type="text/css" href="{['jquery/jquery-ui.css'|base]}">');/***
-	INLINE jquery/ui/jquery.ui.core.js
+    ***/$('head').append('<link rel="stylesheet" type="text/css" href="{['jquery/jquery-ui.css'|base]}">');/***
+    INLINE jquery/ui/jquery.ui.core.js
 END:IF
 
 IF $ui_widget
-	INLINE jquery/ui/jquery.ui.widget.js
+    INLINE jquery/ui/jquery.ui.widget.js
 END:IF
 
 IF $ui_position
-	INLINE jquery/ui/jquery.ui.position.js
+    INLINE jquery/ui/jquery.ui.position.js
 END:IF
 
 IF $ui_mouse
-	INLINE jquery/ui/jquery.ui.mouse.js
+    INLINE jquery/ui/jquery.ui.mouse.js
 END:IF
 
 IF $ui_accordion
-	INLINE jquery/ui/jquery.ui.accordion.js
+    INLINE jquery/ui/jquery.ui.accordion.js
 END:IF
 
 IF $ui_autocomplete
-	INLINE jquery/ui/jquery.ui.autocomplete.js
+    INLINE jquery/ui/jquery.ui.autocomplete.js
 END:IF
 
 IF $ui_button
-	INLINE jquery/ui/jquery.ui.button.js
+    INLINE jquery/ui/jquery.ui.button.js
 END:IF
 
 IF $ui_datepicker
-	INLINE jquery/ui/jquery.ui.datepicker.js
+    INLINE jquery/ui/jquery.ui.datepicker.js
 
-	IF $ui_datepicker_lang
-		AGENT "jquery/ui/i18n/jquery.ui.datepicker-{[$ui_datepicker_lang]}.js"
-	END:IF
+    IF $ui_datepicker_lang
+        AGENT "jquery/ui/i18n/jquery.ui.datepicker-{[$ui_datepicker_lang]}.js"
+    END:IF
 END:IF
 
 IF $ui_draggable
-	INLINE jquery/ui/jquery.ui.draggable.js
+    INLINE jquery/ui/jquery.ui.draggable.js
 END:IF
 
 IF $ui_dialog
-	INLINE jquery/ui/jquery.ui.dialog.js
+    INLINE jquery/ui/jquery.ui.dialog.js
 END:IF
 
 IF $ui_droppable
-	INLINE jquery/ui/jquery.ui.droppable.js
+    INLINE jquery/ui/jquery.ui.droppable.js
 END:IF
 
 IF $ui_progressbar
-	INLINE jquery/ui/jquery.ui.progressbar.js
+    INLINE jquery/ui/jquery.ui.progressbar.js
 END:IF
 
 IF $ui_resizable
-	INLINE jquery/ui/jquery.ui.resizable.js
+    INLINE jquery/ui/jquery.ui.resizable.js
 END:IF
 
 IF $ui_selectable
-	INLINE jquery/ui/jquery.ui.selectable.js
+    INLINE jquery/ui/jquery.ui.selectable.js
 END:IF
 
 IF $ui_slider
-	INLINE jquery/ui/jquery.ui.slider.js
+    INLINE jquery/ui/jquery.ui.slider.js
 END:IF
 
 IF $ui_sortable
-	INLINE jquery/ui/jquery.ui.sortable.js
+    INLINE jquery/ui/jquery.ui.sortable.js
 END:IF
 
 IF $ui_tabs
-	INLINE jquery/ui/jquery.ui.tabs.js
+    INLINE jquery/ui/jquery.ui.tabs.js
 END:IF
 
 
 IF $effects_core
-	INLINE jquery/ui/jquery.effects.core.js
+    INLINE jquery/ui/jquery.effects.core.js
 END:IF
 
 IF $effects_blind
-	INLINE jquery/ui/jquery.effects.blind.js
+    INLINE jquery/ui/jquery.effects.blind.js
 END:IF
 
 IF $effects_bounce
-	INLINE jquery/ui/jquery.effects.bounce.js
+    INLINE jquery/ui/jquery.effects.bounce.js
 END:IF
 
 IF $effects_clip
-	INLINE jquery/ui/jquery.effects.clip.js
+    INLINE jquery/ui/jquery.effects.clip.js
 END:IF
 
 IF $effects_drop
-	INLINE jquery/ui/jquery.effects.drop.js
+    INLINE jquery/ui/jquery.effects.drop.js
 END:IF
 
 IF $effects_explode
-	INLINE jquery/ui/jquery.effects.explode.js
+    INLINE jquery/ui/jquery.effects.explode.js
 END:IF
 
 IF $effects_fade
-	INLINE jquery/ui/jquery.effects.fade.js
+    INLINE jquery/ui/jquery.effects.fade.js
 END:IF
 
 IF $effects_fold
-	INLINE jquery/ui/jquery.effects.fold.js
+    INLINE jquery/ui/jquery.effects.fold.js
 END:IF
 
 IF $effects_highlight
-	INLINE jquery/ui/jquery.effects.highlight.js
+    INLINE jquery/ui/jquery.effects.highlight.js
 END:IF
 
 IF $effects_pulsate
-	INLINE jquery/ui/jquery.effects.pulsate.js
+    INLINE jquery/ui/jquery.effects.pulsate.js
 END:IF
 
 IF $effects_scale
-	INLINE jquery/ui/jquery.effects.scale.js
+    INLINE jquery/ui/jquery.effects.scale.js
 END:IF
 
 IF $effects_shake
-	INLINE jquery/ui/jquery.effects.shake.js
+    INLINE jquery/ui/jquery.effects.shake.js
 END:IF
 
 IF $effects_slide
-	INLINE jquery/ui/jquery.effects.slide.js
+    INLINE jquery/ui/jquery.effects.slide.js
 END:IF
 
 IF $effects_transfer
-	INLINE jquery/ui/jquery.effects.transfer.js
+    INLINE jquery/ui/jquery.effects.transfer.js
 END:IF
 
 ***/

@@ -1,6 +1,6 @@
-<?php /*********************************************************************
+<?php /***** vi: set encoding=utf-8 expandtab shiftwidth=4: ****************
  *
- *   Copyright : (C) 2010 Nicolas Grekas. All rights reserved.
+ *   Copyright : (C) 2011 Nicolas Grekas. All rights reserved.
  *   Email     : p@tchwork.org
  *   License   : http://www.gnu.org/licenses/agpl.txt GNU/AGPL
  *
@@ -14,19 +14,19 @@
 
 class ptlCompiler_php extends self
 {
-	function __construct($template, $binaryMode)
-	{
-		if (0 === strpos($template, 'jquery/'))
-		{
-			$this->Xlvar = '\{\[';
-			$this->Xrvar = '\]\}';
+    function __construct($template, $binaryMode)
+    {
+        if (0 === strpos($template, 'jquery/'))
+        {
+            $this->Xlvar = '\{\[';
+            $this->Xrvar = '\]\}';
 
-			$this->blockSplit = ' ***//*** ';
-			$this->Xlblock = '\/\*\*\*\s*';
-			$this->Xrblock = '\s*\*\*\*\/\n?';
-			$this->Xcomment = '\{\[\*.*?\*\]\}\n?';
-		}
+            $this->blockSplit = ' ***//*** ';
+            $this->Xlblock = '\/\*\*\*\s*';
+            $this->Xrblock = '\s*\*\*\*\/\n?';
+            $this->Xcomment = '\{\[\*.*?\*\]\}\n?';
+        }
 
-		parent::__construct($template, $binaryMode);
-	}
+        parent::__construct($template, $binaryMode);
+    }
 }
