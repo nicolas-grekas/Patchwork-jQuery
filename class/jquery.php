@@ -84,7 +84,7 @@ class jquery
 
         if (!empty($o->ui_datepicker))
         {
-            $lang = patchwork::__LANG__();
+            $lang = Patchwork::__LANG__();
 
             if (isset(self::$langMap[$lang]))
             {
