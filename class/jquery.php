@@ -55,7 +55,7 @@ class jquery
     ),
 
     // Default lang is en-US
-    $langAvail = 'af ar az bg bs ca cs da de el en-GB eo es et eu fa fi fo fr-CH fr gl he hr hu hy id is it ja ko kz lt lv ms nl no pl pt pt-BR ro ru sk sl sq sr sr-SR sv ta th tr uk vi zh-CN zh-HK zh-TW',
+    $langAvail = 'af ar-DZ ar az bg bs ca cs da de el en-AU en-GB en-NZ eo es et eu fa fi fo fr-CH fr gl he hr hu hy id is it ja ko kz lt lv ml ms nl no pl pt pt-BR rm ro ru sk sl sq sr sr-SR sv ta th tj tr uk vi zh-CN zh-HK zh-TW',
     $langMap   = array(
         'zh' => 'zh-CN',
     );
