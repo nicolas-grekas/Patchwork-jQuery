@@ -17,7 +17,7 @@ window.$ = function($f)
 
 onDOMLoaded.jQuery = [];
 onDOMLoaded.jQuery.$scrollCntrl = window.scrollCntrl;
-onDOMLoaded.push(function()
+onDOMLoaded.push(function callee()
 {
     if (window.jQuery)
     {
@@ -28,6 +28,6 @@ onDOMLoaded.push(function()
     }
     else
     {
-        setTimeout(arguments.callee, 1);
+        setTimeout(callee, 5);
     }
 });
