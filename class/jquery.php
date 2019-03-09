@@ -67,8 +67,8 @@ class jquery
         {
             $uiLoad = explode(' ', $uiLoad);
 
-            while (list(,$v) = each($uiLoad))
-            {
+            for ($i = 0; isset($uiLoad[$i]); ++$i) {
+                $v = $uiLoad[$i];
                 $o->{strtr($v, '.', '_')} = 1;
 
                 if (isset(self::$uiDependency[$v]))
